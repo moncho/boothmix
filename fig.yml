@@ -1,4 +1,12 @@
 web:
+  image: dockerfile/nginx
+  ports:
+   - "81:80"
+  volumes:
+   - code/static/:/var/www   
+  links:
+   - app
+app:
   build: .
   command: python code/app.py
   ports:
