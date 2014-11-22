@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html ng-app="v24App">
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -9,7 +9,7 @@
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Brushed | Responsive One Page Template</title>   
+<title>V24Labs | Experimentos genéticos</title>   
 
 <meta name="description" content="Insert Your Site Description" /> 
 
@@ -21,27 +21,10 @@
 <!-- Mobile Internet Explorer ClearType Technology -->
 <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
 
-<!-- Bootstrap -->
-<link href="_include/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
-<link href="_include/css/voting.css" rel="stylesheet">
-
-
-<!-- Font Icons -->
 <link href="_include/css/fonts.css" rel="stylesheet">
+<link href="_include/css/main.css" rel="stylesheet">
 
-<!-- Shortcodes -->
-<link href="_include/css/shortcodes.css" rel="stylesheet">
-
-<!-- Responsive -->
-<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="_include/css/responsive.css" rel="stylesheet">
-
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
 
 
 <!-- Fav Icon -->
@@ -54,13 +37,15 @@
 
 <!-- Modernizr -->
 <script src="_include/js/modernizr.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
 
 
 
 </head>
 
 
-<body>
+<body ng-controller="workersCtrl">
 
 <!-- This section is for Splash Screen -->
 <div class="ole">
@@ -117,10 +102,14 @@
             <div class="span12">
                 <div class="title-page">
                     <h2 class="title">El Experimento</h2>
-                    <h3 class="title-description">Genética venturera</h3>
+                    <h3 class="title-description">Gen&eacute;tica venturera</h3>
                 </div>
-                <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat . 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <p class="profile-description">
+                  La nueva estrategia en la empresa está&aacute; clara, innovaci&oacute;n y experimentaci&oacue;n para poder ofrecer a nuestros clientes la mejor experiencia posible. El nuevo (y futuro) departamento genético de ventura24 ha pensado que para poder llevar la a inimaginables cotas de calidad hay que mejorar a sus trabajadores. 
+                </p>
+                <p class="profile-description">
+                   Nuestros ciéntificos han pensado en obtener
+                </p>
             </div>
         </div>
         <!-- End Title Page -->
@@ -137,124 +126,43 @@
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">Los Sujetos</h2>
+                <h2 class="title">Los resultados</h2>
             </div>
         </div>
     </div>
     <!-- End Title Page -->
     
     <!-- People -->
-    <div class="row">
+    <div class="row workers" >  
     	
         <!-- Start Profile -->
-    	<div class="span6 profile">
+    	<div class="span6 profile" ng-repeat="worker in workers">
         	<div class="image-wrap">
                
-                <img src="_include/img/pics/joseluis_perez.jpg" alt="John Doe">
+                <img ng-src="{{worker.pic}}" alt="John Doe">
             </div>
-            <h3 class="profile-name">Jose Luis Perez</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat . 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <h3 class="profile-name">{{worker.name}}</h3>
+            <p class="profile-description">{{worker.desc}}</p>
            
                 
           <div class="star-rating">
-              <input type="radio" name="rating" value="1"><i></i>
-              <input type="radio" name="rating" value="2"><i></i>
-              <input type="radio" name="rating" value="3"><i></i>
-              <input type="radio" name="rating" value="4"><i></i>
-              <input type="radio" name="rating" value="5"><i></i>
-              <input type="radio" name="rating" value="6"><i></i>
-              <input type="radio" name="rating" value="7"><i></i>
-              <input type="radio" name="rating" value="8"><i></i>
-              <input type="radio" name="rating" value="9"><i></i>
-              <input type="radio" name="rating" value="10"><i></i>
+              <input type="radio" name="rating-{{worker.id}}" value="1"><i></i>
+              <input type="radio" name="rating-{{worker.id}}" value="2"><i></i>
+              <input type="radio" name="rating-{{worker.id}}" value="3"><i></i>
+              <input type="radio" name="rating-{{worker.id}}" value="4"><i></i>
+              <input type="radio" name="rating-{{worker.id}}" value="5"><i></i>
+              <input type="radio" name="rating-{{worker.id}}" value="6"><i></i>
+              <input type="radio" name="rating-{{worker.id}}" value="7"><i></i>
+              <input type="radio" name="rating-{{worker.id}}" value="8"><i></i>
+              <input type="radio" name="rating-{{worker.id}}" value="9"><i></i>
+              <input type="radio" name="rating-{{worker.id}}" value="10"><i></i>
             </div>
-             <strong class="choice">Valoraci&oacute;n: <span class="result">0</span></strong>
+             <strong class="choice">Valoraci&oacute;n: <span class="result-{{worker.id}}">0</span></strong>
              
         </div>
         <!-- End Profile -->
         
-        <!-- Start Profile -->
-    	<div class="span6 profile">
-        	<div class="image-wrap">
-                
-                <img src="_include/img/pics/cesar_jordan.jpg" alt="Jane Helf">
-            </div>
-            <h3 class="profile-name">Cesar Jordan</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat . 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-           
-                
-          <div class="star-rating">
-              <input type="radio" name="rating" value="1"><i></i>
-              <input type="radio" name="rating" value="2"><i></i>
-              <input type="radio" name="rating" value="3"><i></i>
-              <input type="radio" name="rating" value="4"><i></i>
-              <input type="radio" name="rating" value="5"><i></i>
-              <input type="radio" name="rating" value="6"><i></i>
-              <input type="radio" name="rating" value="7"><i></i>
-              <input type="radio" name="rating" value="8"><i></i>
-              <input type="radio" name="rating" value="9"><i></i>
-              <input type="radio" name="rating" value="10"><i></i>
-            </div>
-             <strong class="choice">Valoraci&oacute;n: <span class="result">0</span></strong>
-        </div>
-        <!-- End Profile -->
-        
-         <!-- Start Profile -->
-        <div class="span6 profile">
-            <div class="image-wrap">
-               
-                <img src="_include/img/pics/joseluis_perez.jpg" alt="John Doe">
-            </div>
-            <h3 class="profile-name">Jose Luis Perez</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat . 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                
-            
-                
-         <div class="star-rating">
-              <input type="radio" name="rating" value="1"><i></i>
-              <input type="radio" name="rating" value="2"><i></i>
-              <input type="radio" name="rating" value="3"><i></i>
-              <input type="radio" name="rating" value="4"><i></i>
-              <input type="radio" name="rating" value="5"><i></i>
-              <input type="radio" name="rating" value="6"><i></i>
-              <input type="radio" name="rating" value="7"><i></i>
-              <input type="radio" name="rating" value="8"><i></i>
-              <input type="radio" name="rating" value="9"><i></i>
-              <input type="radio" name="rating" value="10"><i></i>
-            </div>
-             <strong class="choice">Valoraci&oacute;n: <span class="result">0</span></strong>
-        </div>
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-        <div class="span6 profile">
-            <div class="image-wrap">
-                
-                <img src="_include/img/pics/cesar_jordan.jpg" alt="Jane Helf">
-            </div>
-            <h3 class="profile-name">Jane Helf</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat . 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-           
-                
-           <div class="star-rating">
-              <input type="radio" name="rating" value="1"><i></i>
-              <input type="radio" name="rating" value="2"><i></i>
-              <input type="radio" name="rating" value="3"><i></i>
-              <input type="radio" name="rating" value="4"><i></i>
-              <input type="radio" name="rating" value="5"><i></i>
-              <input type="radio" name="rating" value="6"><i></i>
-              <input type="radio" name="rating" value="7"><i></i>
-              <input type="radio" name="rating" value="8"><i></i>
-              <input type="radio" name="rating" value="9"><i></i>
-              <input type="radio" name="rating" value="10"><i></i>
-            </div>
-             <strong class="choice">Valoraci&oacute;n: <span class="result">0</span></strong>
-        </div>
-        <!-- End Profile -->
+      
         
     </div>
     <!-- End People -->
@@ -279,10 +187,13 @@
 
 
 <!-- Js -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<!-- jQuery Core -->
 <script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
 <script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
 <script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
+<script src="_include/js/angular/controllers.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="_include/js/main.js"></script> <!-- Default JS -->
 <!-- End Js -->
 
