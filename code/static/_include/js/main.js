@@ -77,7 +77,7 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">V24 Labs</div>', thumb : '', url : ''}
+											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">V24 Labs</div><div class="slide-home-icon"><img src="_include/img/lab-icon.png" alt="V24 Labs" /></div>', thumb : '', url : ''}
 											
 									],
 									

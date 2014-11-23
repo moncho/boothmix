@@ -320,11 +320,14 @@ h3.spec {
 
 #home-slider #slidecaption {
 	width: 100%;
-	line-height: 250px;
+	line-height: 100px;
 	margin: 0;
 	text-align: center;
 	text-shadow: none;	
 }
+.slide-home-icon img{
+		width: 320px;
+	}
 
 #home-slider .slide-content {
 	font-family: 'Viga', sans-serif;
