@@ -4,6 +4,7 @@ Ventura24 Experiments
 Silly project for silly stuff.
 
 
-Read http://www.fig.sh/ to install fig.
+[Install fig.](http://www.fig.sh/install.html)
 
 Then fig up.
+
