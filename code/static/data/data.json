@@ -3,65 +3,113 @@
   "id": 1,
   "name": "Isabel Calzada",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/001.jpg",
-  "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
+  "desc": "¡B2G te necesita! Un nuevo proyecto ha irrumpido con fuerza en la empresa, gestionar la Lotería de Alaska. Los genes marketinianos combinados con una restistencia infinita al frio hacen de Isa Calzada el candidato ideal."
  },
  {
   "id": 2,
   "name": "Filete Carpena",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/002.jpg",
-  "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
+  "desc": "Si combinamos la programación Filetesca y el domnio de la compra online Carpenesca obtenemos un trabajador tremendamente habilidoso. Filete Carpena ha desarrollado un nuevo software que compra ropa online incluso antes de que este disponible en BuyVip. Espectacular."
  },
   {
   "id": 3,
   "name": "Dalons Peral",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/003.jpg",
-  "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
+  "desc": "Dalons Peral ha resultado ser un sujeto francamente eficaz. Segun está negociando un acuerdo con un partner por telefono ya va diseñando los banners que van a necesitar. Antes de colgar ya ha enviado todo el material. Hay leyendas que dicen que su arte es tan grandioso que hay newsletters que han devuelto la vista a gente de la ONCE."
  }
  ,
   {
   "id": 4,
   "name": "Mercedes Gallardo",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/004.jpg",
-  "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
+  "desc": "Maestro y aprendiz se combinan para crear al trabajador definitivo. Sólo Mercedes Gallardo ha sido capaz de convencer a La Bruja de Oro y a Doña Manolita para que usen Navidad Empresas entre sus empleados."
  }
  ,
   {
   "id": 5,
-  "name": "Mercedes Gallardo",
+  "name": "Rafael Capilla",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/005.jpg",
-  "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
+  "desc": "Frontend y backend unidos, se defiende perfectamente por delante y por detrás. Aunque la única razón por la que hemos combinado a estos 2 trabajadores es por la bien que le queda el bigote."
  }
  ,
   {
   "id": 6,
-  "name": "Mercedes Gallardo",
+  "name": "Joshes Novo",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/006.jpg",
-  "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
+  "desc": "Nuestros ciéntificos han extraido la consciencia de Joshes Novo y la han transferido a las Redes Sociales. Joshes Novo ha visto cosas que jamas creeríamos, darle al like más alla de Orion. Ha visto retuits brillar en la oscuridad cerca de la puerta del Curruncho. Todos estos momentos se perderan en el tiempo como imágenes de Instagram en la lluvia. Es hora de sacar el movil."
  }
  ,
   {
   "id": 7,
-  "name": "Mercedes Gallardo",
+  "name": "Susana Crespo",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/007.jpg",
-  "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
+  "desc": "El clan Crespo Venturil ncesitaba una mujer en sus filas. Desgraciadamente nuestros ciéntificos no contaron con la fuerza de los genes barbudos de los Crespo. B2B/G se está planteado presentarla a Eurovisión como estrategía de expansión europea."
  }
 ,
   {
   "id": 8,
-  "name": "Mercedes Gallardo",
+  "name": "XXXXX XXXXX",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/008.jpg",
   "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
  },
   {
   "id": 9,
-  "name": "Mercedes Gallardo",
+  "name": "Manuel Torres",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/009.jpg",
   "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
  },
   {
   "id": 10,
-  "name": "Mercedes Gallardo",
+  "name": "M.A. Leandro",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/010.jpg",
-  "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
+  "desc": "¡¡El poder reivindicativo múltiplicado por 2!! M.A. Leandro es el trabajador completo. Desarrolla su propio software, lo prueba, se encuentra sus propios bugs, los intenta arreglar y si al final no puede, ¡se convence a si mismo de que no es un bug!"
+ },
+  {
+  "id": 11,
+  "name": "Jose Luis Moreno",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/011.jpg",
+  "desc": "¡Toma Moreno! Quien iba a decir que mezclando a un experto en loterías y a un desarrollador Java saldría esto. Justo lo que necesita Ventura24, un ventrilocuo. Con sus marionetas míticas Macario El Lotero o Monchito Crespo, diversión asegurada en la oficina."
+ }
+ ,
+  {
+  "id": 12,
+  "name": "Pepe Antolín",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/012.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ }
+ ,
+  {
+  "id": 13,
+  "name": "Maria Martinez",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/013.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ }
+ ,
+  {
+  "id": 14,
+  "name": "Sergio Valbuena",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/014.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ }
+ ,
+  {
+  "id": 15,
+  "name": "Yaiza Pérez",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/015.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ }
+ ,
+  {
+  "id": 16,
+  "name": "Cristina Torres",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/016.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ }
+ ,
+  {
+  "id": 17,
+  "name": "Jose San Camarasa",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/017.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
  }
 ]
