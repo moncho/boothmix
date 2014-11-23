@@ -56,7 +56,7 @@
   "id": 9,
   "name": "Manuel Torres",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/009.jpg",
-  "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
+  "desc": "Como se sientan uno al lado del otro y andamos un poco justos de sitios (WTF) nuestros científicos han decido combinar a ambos trabajadores para ahorrarnos una silla, un pc, un teclado, un ratón, y lo más importante de todo, una alfombrilla."
  },
   {
   "id": 10,
@@ -110,6 +110,24 @@
   "id": 17,
   "name": "Jose San Camarasa",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/017.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 18,
+  "name": "Esther Pérez",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/018.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 19,
+  "name": "Maria Rodríguez",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/019.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 20,
+  "name": "Mario Cañada",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/020.jpg",
   "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
  }
 ]
