@@ -13,7 +13,7 @@ app:
   ports:
    - "5000:5000"
   volumes:
-   - code/:/app/code
+   - code/app.py:/app/code/app.py
   links:
    - redis
 redis:

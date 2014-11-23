@@ -4,10 +4,27 @@ import os
 app = Flask(__name__, static_url_path='/static')
 redis = Redis(host='redis', port=6379)
 
-@app.route('/')
-def root():
+@app.route('/vote/cast/<id>', methods=['POST'])
+def vote():
+    redis.incr('hits')
+    return app.send_static_file('index.html')
+
+@app.route('/vote/top10')
+def top10():
+    redis.incr('hits')
+    return app.send_static_file('index.html')
+
+
+@app.route('/vote/isopen/')
+def isOpen():
+    redis.incr('hits')
+    return app.send_static_file('index.html')
+
+@app.route('/vote/close/')
+def close():
     redis.incr('hits')
     return app.send_static_file('index.html')    
+
 
 @app.errorhandler(404)
 def not_found(error):
