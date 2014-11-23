@@ -5,8 +5,8 @@ app = Flask(__name__, static_url_path='/static')
 redis = Redis(host='redis', port=6379)
 
 @app.route('/vote/cast/<id>', methods=['POST'])
-def vote():
-    redis.incr('hits')
+def vote(id):
+    redis.incr('id')
     return app.send_static_file('index.html')
 
 @app.route('/vote/top10')
