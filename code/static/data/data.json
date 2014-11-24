@@ -50,7 +50,7 @@
   "id": 8,
   "name": "XXXXX XXXXX",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/008.jpg",
-  "desc": "Los genes marketinianos combinados con una restistencia al frio infinita hacen de Isa Calzada un trabajor ideal para la nueva oficina en el polo sur"
+  "desc": "El departamento de V24Labs lo tenía claro, por la mañana a Vallecas, por la tarde a Plaza de España. El sujeto resultante acabó enviando una newsletter con el siguiente asunto 'Compra tus décimos de La Quiniela de la Once en el Bar de Antonio, ráscalos con Ventura VeintiOnce y llévate el bote de EuroCupones.'"
  },
   {
   "id": 9,
@@ -82,28 +82,28 @@
   "id": 13,
   "name": "Maria Martinez",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/013.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina. "
  }
  ,
   {
   "id": 14,
   "name": "Sergio Valbuena",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/014.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": ""
  }
  ,
   {
   "id": 15,
   "name": "Yaiza Pérez",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/015.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "Esta combinación genética va a revolucionar el mundo de la publicidad online. La combinación Once-Ventura24 deja obsoleto el concepto del banner multidispositvo, Yaiza Pérez inventa el Banner MultiLotería que se adapta a cualquier lotería existente. "
  }
  ,
   {
   "id": 16,
   "name": "Cristina Torres",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/016.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "La figura del desarrollador frontend contable ha llegado al mundo laboral para quedarse, lo mismo te hace una landing que te corrige una hoja de gastos, las posibilidades son infinitas. Además, mirad que pelazo tan suave y sedoso."
  }
  ,
   {
@@ -116,18 +116,96 @@
   "id": 18,
   "name": "Esther Pérez",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/018.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "V24Labs quiere que nuestro departamento de marketing sea el más puntero de todo el macrocosmos. Necesitaban una inyección tecnológica pero sin aumentar la plantilla. El resultado es Esther Pérez en cuya tarjeta de visita brilla el título de 'Technomarketing Executive Consultant'"
  },
  {
   "id": 19,
   "name": "Maria Rodríguez",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/019.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "¿Hacer entrevistas de trabajo en Plaza de España y luego en Vallecas? nuestros científicos han pensado que eso es poco eficiente. Los avances de la combinación genética nos han permitido obtener una solución al ya famoso problema de las 'entrevistas de trabajo en un entorno de deslocalización oficinística'"
  },
  {
   "id": 20,
   "name": "Mario Cañada",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/020.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 21,
+  "name": "Frannie Sánchez Navarro",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/021.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 22,
+  "name": "Karla hungria",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/022.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 23,
+  "name": "Ana Ana",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/023.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 24,
+  "name": "Verónica Peral",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/024.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 25,
+  "name": "Javier Boiteaux",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/025.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 26,
+  "name": "Alvaro Crespo",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/026.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 27,
+  "name": "Javier Agudo",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/027.jpg",
+  "desc": "¿Hacer una consulta en la base de datos de usuarios para luego enviarles una newsletter? eso es cosa del pasado, Javier Agudo es capaz de leer la base de datos cual Neo lee matrix mientras escribe newsletters personalizadas a cada usuario."
+ },
+ {
+  "id": 28,
+  "name": "Raul Redondo",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/028.jpg",
+  "desc": "El proyecto Raul Redondo surge como complemento para el proyecto anterior, Javier Agudo, combinados pueden realizar la campaña de navidad con una mano atada a la espalda, tecleando con la nariz y haciendo doble clic con la punta del......pinganillo"
+ },
+ {
+  "id": 29,
+  "name": "Lidia Rios",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/029.jpg",
+  "desc": "'No sabemos que ha podido pasar aquí, creemos que se nos han mezclado las probetas' declara uno de nuestros científicos tras ver el resultado final."
+ },
+ {
+  "id": 30,
+  "name": "Tamara Pérez",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/030.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 31,
+  "name": "Xiana Miño",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/031.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 32,
+  "name": "Frannie Pelufo",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/032.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 33,
+  "name": "Javier Jordan",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/033.jpg",
   "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
  }
 ]

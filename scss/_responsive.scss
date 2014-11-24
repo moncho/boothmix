@@ -1,5 +1,8 @@
-@media (min-width: 979px) {
+@media (min-width: 1200px) {
 	.profile {min-height:1400px;}
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+	.profile {min-height:1250px;}
 }
 @media (min-width: 768px) and (max-width: 979px) {
 	#menu {
