@@ -1,7 +1,7 @@
 web:
   image: dockerfile/nginx
   ports:
-   - "81:80"
+   - "80:80"
   volumes:
    - code/static/:/var/www
    - nginx-conf/:/etc/nginx/sites-enabled
