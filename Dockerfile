@@ -10,6 +10,6 @@ RUN pip install -r requirements.txt
 ADD code/ /app/code/
 
 ENV PORT 5000
-ENV APP_NAME Ventura24 Experiments
+ENV APP_NAME V24Labs
 
 

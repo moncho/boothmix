@@ -10,8 +10,8 @@ web:
 app:
   build: .
   command: python code/app.py
-  ports:
-   - "5000:5000"
+  expose:
+   - "5000"
   volumes:
    - code/app.py:/app/code/app.py
    - code/voting.py:/app/code/voting.py

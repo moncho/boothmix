@@ -9,9 +9,9 @@ server {
     }
 
 
-    # Proxying the connections connections
+    # Proxying rating system connections
     location /vote {
-        proxy_pass         http://boothmix_app_1:5000;
+        proxy_pass         http://app:5000;
         proxy_redirect     off;
         proxy_set_header   Host $host;
         proxy_set_header   X-Real-IP $remote_addr;

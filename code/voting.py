@@ -3,4 +3,4 @@
 ID = "id"
 VOTES = "no_of_votes"
 SUM = "sum"
-SCORE = "score"
+RATING = "rating"
