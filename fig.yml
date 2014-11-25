@@ -19,6 +19,3 @@ app:
    - redis
 redis:
   image: redis:2.8.17
-  command: redis-server --appendonly yes
-  volumes:
-  - /data:/data
