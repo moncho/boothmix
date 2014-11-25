@@ -1,30 +1,36 @@
-from flask import Flask, session
+from flask import Flask, session, request, jsonify
 from flask.ext.autodoc import Autodoc
 from redis import Redis
+import json
 import voting
-import os
+
 
 app = Flask(__name__, static_url_path='/static')
 auto = Autodoc(app)
 redis = Redis(host='redis', port=6379)
 voting_status = 'open'
 
-@app.route('/vote/rate/<id>/<rating>/', methods=['POST', 'GET'])
+@app.route('/vote/rate/<id>/<int:rating>/', methods=['POST', 'GET'])
 @auto.doc()
 def rate(id, rating):
     """rates resource identified by <b>id</b> with the given <b>rating</b>.
     JSON: 
         {"result": "ok" }
     """
-        
-    idInRedis = redisId(id)
-    if redis.hexists(idInRedis, voting.VOTES):
-        redis.hincrby(idInRedis, voting.VOTES, 1)
-        redis.hincrby(idInRedis, voting.SUM, rating)
-    else:
-        redis.hmset(idInRedis, {voting.VOTES: 1, voting.SUM: vote})
-    updateIdRating(id)
-    return  '{"result": "ok" }'
+    result = "ok"
+    httpResult = 200
+    if (rating > 0 and rating <= 10): 
+        idInRedis = redisId(id)
+        if redis.hexists(idInRedis, voting.VOTES):
+            redis.hincrby(idInRedis, voting.VOTES, 1)
+            redis.hincrby(idInRedis, voting.SUM, rating)
+        else:
+            redis.hmset(idInRedis, {voting.VOTES: 1, voting.SUM: rating})
+        updateIdRating(id)        
+    else:        
+        result = "invalid rating"
+        httpResult = 404        
+    return jsonify({"result": result }), httpResult
 
 @app.route('/vote/top/<n>/')
 @auto.doc()
@@ -38,8 +44,9 @@ def top(n):
              {"id": "8", "rating" : "7.4"}
              ]}'
     """             
-    app.logger.debug(redis.zrevrange(voting.RATING, 0, n, "withscores"))
-    return '{"ids": [1,2,3] }'
+    results = redis.zrevrange(voting.RATING, 0, n, "withscores")
+        
+    return ratingToJSON(results), 200
 
 @app.route('/vote/status/')
 @auto.doc()
@@ -59,6 +66,7 @@ def open():
 
 @app.route('/vote/close/')
 def close():
+    app.logger.info("Voting closed from " + getClientIp(request))
     global voting_status
     voting_status = 'close'
     return votingStatusJSON()
@@ -70,7 +78,18 @@ def describe_api():
 
 def votingStatusJSON():    
     global voting_status
-    return '{"status": "' + voting_status + '" }'
+    return jsonify({"status": voting_status }), 200
+
+def ratingToJSON(ratings):
+    json = '{"top":['
+    for rating in ratings:
+        app.logger.debug(rating)
+        json += '{"id" : "%s", "rating" : "%s"},' % (rating[0], rating[1])
+    #To remove the last added ','
+    if ratings : 
+        json = json[:-1]
+    json += ']}'
+    return json
 
 def redisId(id):
     return "id:" + id
@@ -85,6 +104,13 @@ def recalculateRating(id):
     sumAmount = int(redis.hget(rId, voting.SUM))
     return "%0.1f" % (sumAmount / float(votes))
 
+def getClientIp(request):
+    ip = ""
+    if not request.headers.getlist("X-Forwarded-For"):
+        ip = request.remote_addr
+    else:
+        ip = request.headers.getlist("X-Forwarded-For")[0]
+    return ip
 
 
 @app.errorhandler(404)
