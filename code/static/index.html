@@ -11,7 +11,7 @@
 
 <title>V24Labs | Experimentos genéticos</title>   
 
-<meta name="description" content="Insert Your Site Description" /> 
+<meta name="description" content="V24Labs" /> 
 
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,7 @@
 
 
 <link href="_include/img/icons/AppIcon76x76.png" rel="apple-touch-icon" sizes="76x76" />
-<link  rel='shortcut icon' href='/_include/img/icons/fav-icon.png'>
+<link rel='shortcut icon' href='/_include/img/icons/fav-icon.png'>
 
 
 <!-- Modernizr -->
@@ -145,7 +145,7 @@
     	<div class="span6 profile" ng-repeat="worker in workers">
         	<div class="image-wrap">
                
-                <img ng-src="{{worker.pic}}" alt="John Doe">
+                <img ng-src="{{worker.pic}}" ng-alt="Sujeto {{worker.id}}">
             </div>
             <h3 class="profile-name">{{worker.name}}</h3>
             <p class="profile-description">{{worker.desc}}</p>
