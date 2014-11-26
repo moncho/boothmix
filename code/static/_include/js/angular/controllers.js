@@ -13,10 +13,15 @@ v24App.controller('workersCtrl', function ($scope, $http) {
 
 	  return new Array(num);   
   };
-  $scope.vote = function(id,score) {
-  	 $http.get('/vote/rate/'+id+"/"+score+"/",
-        function(response) { console.log(response); },
-        function(failure) { console.log("failed :(", failure); });
-  };
+  $scope.vote = function(id,score){
+  	 
 
+     $http.get('/vote/rate/'+id+'/'+score+'/').
+  success(function(data, status, headers, config) {
+   console.log("exito: "+data);
+  }).
+  error(function(data, status, headers, config) {
+    console.log("error: "+data);
+  });
+  }
 });

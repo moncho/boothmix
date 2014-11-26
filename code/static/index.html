@@ -151,11 +151,11 @@
             <p class="profile-description">{{worker.desc}}</p>
            
                 
-          <div class="star-rating" >
+          <div class="star-rating" ng-click="voted=true" ng-hide="voted">
               <input type="radio" name="rating-{{worker.id}}" ng-repeat="i in getNumber(10) track by $index" value={{$index+1}} ng-click="vote(worker.id,$index+1)"><i></i>
              
             </div>
-             <strong class="choice">Valoraci&oacute;n: <span class="result-{{worker.id}}">0</span></strong>
+             <strong class="choice" >Valoraci&oacute;n: <span class="result-{{worker.id}}">0</span></strong>
              
         </div>
         <!-- End Profile -->
@@ -167,13 +167,6 @@
 </div>
 </div>
 <!-- End About Section -->
-
-
-
-
-
-
-
 
 
 
@@ -190,9 +183,9 @@
 <script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
 <script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
 <script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="_include/js/angular/controllers.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="_include/js/main.js"></script> <!-- Default JS -->
+<script src="_include/js/plugins.js"></script>
+<script src="_include/js/angular/controllers.js"></script> 
+<script src="_include/js/main.js"></script>
 <!-- End Js -->
 
 </body>
