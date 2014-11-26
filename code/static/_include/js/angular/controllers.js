@@ -50,3 +50,15 @@ v24App.controller('it_workersCtrl', function ($scope, $http) {
     console.log("error loading fileworkers")
   });
 });
+
+
+
+v24App.controller('winnerCtrl', function ($scope, $http) {
+  $http.get('vote/top/2/').success(function(data) {
+    $scope.winners = data;
+
+  }).
+  error(function(data, status, headers, config) {
+    console.log("error loading winners")
+  });
+});

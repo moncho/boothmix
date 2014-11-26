@@ -1,0 +1,183 @@
+<html ng-app="v24App">
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>V24Labs | Experimentos genéticos</title>   
+
+<meta name="description" content="V24Labs" /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+
+<link href="_include/css/fonts.css" rel="stylesheet">
+<link href="_include/css/main.css" rel="stylesheet">
+
+
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="_include/img/icons/72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="_include/img/icons/72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="_include/img/icons/144.png">
+
+
+<link href="_include/img/icons/AppIcon76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link rel='shortcut icon' href='/_include/img/icons/fav-icon.png'>
+
+
+<!-- Modernizr -->
+<script src="_include/js/modernizr.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.min.js"></script>
+
+
+
+</head>
+
+
+<body ng-controller="winnerCtrl">
+
+<!-- This section is for Splash Screen -->
+<div class="ole">
+<section id="jSplash">
+	<div id="circle"></div>
+</section>
+</div>
+<!-- End of Splash Screen -->
+
+<!-- Homepage Slider -->
+<div id="home-slider">	
+    <div class="overlay"></div>
+
+    <div class="slider-text">
+    	<div id="slidecaption"></div>
+    </div>   
+	
+	<div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
+        <ul id="slide-list"></ul>
+        
+        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
+    </div>
+</div>
+<!-- End Homepage Slider -->
+
+<!-- Header -->
+<header>
+    <div class="sticky-nav">
+    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+        	V24 Labs
+        </div>
+        
+        
+        <nav id="menu">
+        	<ul id="menu-nav">
+               <li class="current"><a href="index.html#home-slider">Inicio</a></li>
+                <li><a href="index.html#work">Votar</a></li>
+                <li><a href="file_mix.html">Genes Fileteados</a></li>
+                <li><a href="italian_mix.html">Italy connection</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Our Work Section -->
+<div id="intro" class="page">
+	<div class="container">
+    	<!-- Title Page -->
+        <div class="row">
+            <div class="span12">
+                <div class="title-page">
+                    <h2 class="title"></h2>
+                    <h3 class="title-description">Top 3</h3>
+                </div>
+                
+                <p class="profile-description">
+                   Otro Disclaimer: Ning&uacute;n empleado de Ventura24 ha resultado dañado. De momento.
+                </p>                                
+            </div>
+        </div>
+        <!-- End Title Page -->
+        
+       
+    </div>
+</div>
+<!-- End Our Work Section -->
+
+<!-- About Section -->
+<div id="work" class="page-alternate ">
+<div class="container">
+    <!-- Title Page -->
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Los ganadores</h2>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Page -->
+    
+    <!-- People -->
+    <div class="row workers onlyPic" >  
+    	
+        <!-- Start Profile -->
+    	<div class="span12 profile" ng-repeat="winner in winners.top">
+            <h2>Top {{$index+1}}</h2>
+            <h2>Valoraici&oacute;n gen&eacute;tica: {{winner.rating}}</h2>
+        	<div class="image-wrap">
+                <img ng-src="https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/0{{winner.id}}.jpg">
+            </div>
+            
+           
+                
+          
+        <!-- End Profile -->        
+    </div>
+    <!-- End People -->
+</div>
+</div>
+<!-- End About Section -->
+
+
+
+<!-- Back To Top -->
+<a id="back-to-top" href="#">
+	<i class="font-icon-arrow-simple-up"></i>
+</a>
+<!-- End Back to Top -->
+
+
+<!-- Js -->
+<!-- jQuery Core -->
+<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
+<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
+<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
+<script src="_include/js/plugins.js"></script>
+<script src="_include/js/angular/controllers.js"></script> 
+<script src="_include/js/main.js"></script>
+<!-- End Js -->
+
+</body>
+</html>
