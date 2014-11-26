@@ -143,8 +143,8 @@
     	
         <!-- Start Profile -->
     	<div class="span12 profile" ng-repeat="winner in winners.top">
-            <h2>Top {{$index+1}}</h2>
-            <h2>Valoraici&oacute;n gen&eacute;tica: {{winner.rating}}</h2>
+            <h2 class="top{{$index+1}}">Top {{$index+1}}</h2>
+            <h2>Valoraci&oacute;n gen&eacute;tica: {{winner.rating}}</h2>
         	<div class="image-wrap">
                 <img ng-src="https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/0{{winner.id}}.jpg">
             </div>
