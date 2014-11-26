@@ -1,5 +1,5 @@
 
-var v24App = angular.module('v24App', []);
+var v24App = angular.module('v24App', ['ngAnimate']);
 
 
 v24App.controller('workersCtrl', function ($scope, $http) {
