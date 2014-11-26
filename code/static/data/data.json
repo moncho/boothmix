@@ -3,7 +3,7 @@
   "id": 1,
   "name": "Isabel Calzada",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/001.jpg",
-  "desc": "¡B2G te necesita! Un nuevo proyecto ha irrumpido con fuerza en la empresa, gestionar la Lotería de Alaska. Los genes marketinianos combinados con una restistencia infinita al frio hacen de Isa Calzada el candidato ideal."
+  "desc": "¡B2G te necesita! Un nuevo proyecto ha irrumpido con fuerza en la empresa, gestionar la Lotería del Polo Sur. Los genes marketinianos combinados con una restistencia infinita al frio hacen de Isa Calzada el candidato ideal para este gran reto, conseguir que los 75 esquimales viven allí completen una peña de RompeBotes."
  },
  {
   "id": 2,
@@ -29,7 +29,7 @@
   "id": 5,
   "name": "Rafael Capilla",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/005.jpg",
-  "desc": "Frontend y backend unidos, se defiende perfectamente por delante y por detrás. Aunque la única razón por la que hemos combinado a estos 2 trabajadores es por la bien que le queda el bigote."
+  "desc": "Frontend y backend unidos, se defiende perfectamente por delante y por detrás. Aunque la única razón por la que hemos combinado a estos 2 trabajadores es por lo bien que le queda el bigote."
  }
  ,
   {
@@ -48,7 +48,7 @@
 ,
   {
   "id": 8,
-  "name": "XXXXX XXXXX",
+  "name": "Enrique Donoso",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/008.jpg",
   "desc": "El departamento de V24Labs lo tenía claro, por la mañana a Vallecas, por la tarde a Plaza de España. El sujeto resultante acabó enviando una newsletter con el siguiente asunto 'Compra tus décimos de La Quiniela de la Once en el Bar de Antonio, ráscalos con Ventura VeintiOnce y llévate el bote de EuroCupones.'"
  },
@@ -75,21 +75,21 @@
   "id": 12,
   "name": "Pepe Antolín",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/012.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín el candidato perfecto para cualquier proyecto de la Once."
  }
  ,
   {
   "id": 13,
   "name": "Maria Martinez",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/013.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina. "
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina."
  }
  ,
   {
   "id": 14,
   "name": "Sergio Valbuena",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/014.jpg",
-  "desc": ""
+  "desc": "La idea es crear un departamento de Sergios Valbuenas para que se encargue de todo lo relacionado con Computop, el gran desafio del desarrollador. Para este ejercito de clones no habría empresa que no fuese capaz de cumplir con PCI, hasta a el chino de abajo le podrían poner pago con tarjeta seguro."
  }
  ,
   {
@@ -116,7 +116,7 @@
   "id": 18,
   "name": "Esther Pérez",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/018.jpg",
-  "desc": "V24Labs quiere que nuestro departamento de marketing sea el más puntero de todo el macrocosmos. Necesitaban una inyección tecnológica pero sin aumentar la plantilla. El resultado es Esther Pérez en cuya tarjeta de visita brilla el título de 'Technomarketing Executive Consultant'"
+  "desc": "V24Labs quiere que nuestro departamento de marketing sea el más puntero de todo la internete. Necesitaban una inyección tecnológica pero sin aumentar la plantilla. El resultado es Esther Pérez en cuya tarjeta de visita brilla el título de 'Technomarketing Executive Consultant'"
  },
  {
   "id": 19,
@@ -128,7 +128,7 @@
   "id": 20,
   "name": "Mario Cañada",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/020.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "El don de gentes de Mario combinado con la labia y carrete de Aitor pueden convertir a Mario Cañada en trabajador definitivo. Sería capaz de convencer de forma implacable a cualquier usuario de que compre en Ventura24. Algo así '¿Te fumas un cigarro y te cuento las bondades de la Peña PrimiSistema? Luego nos vamos de copas'."
  },
  {
   "id": 21,
@@ -146,25 +146,25 @@
   "id": 23,
   "name": "Ana Ana",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/023.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": ""
  },
  {
   "id": 24,
   "name": "Verónica Peral",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/024.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "El doble de fuerza marketiniana, el doble de altas, el doble de facturación, todo ello en la mitad de espacio (y ahora que no nos oye nadie, con la mitad de sueldo). ¡Menudos genios somos en V24Labs!"
  },
  {
   "id": 25,
-  "name": "Javier Boiteaux",
+  "name": "Mateo Boiteaux",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/025.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "Mezclamos un italiano y un frances, lo mejor de cada pais. Hemos metido en la batidora de genes una baguete y una pizza, mozzarela y camembert, Lambrusco y Dom Pérignon, saliva de Berlusconi y Sarkozy, unos cuantos cacharros tecnológicos y el resultado ha sido Mateo Boiteaux, el italiano-frances que habla español."
  },
  {
   "id": 26,
   "name": "Alvaro Crespo",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/026.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "Yago estaba triste, echa de menos las primitivas y las quinielas. Alvaro se cansa de que el backoffice de petes y le gustaría detectar estos errores antes de que le exploten en la cara. La soución, una combinación genética para tener a los dos contentos."
  },
  {
   "id": 27,
@@ -194,7 +194,7 @@
   "id": 31,
   "name": "Xiana Miño",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/031.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "Un nuevo intento de crear al diseñador contable perfecto. Facturas responsive, banners multidivisa, y newsletters que cumplen pci, son los productos que nos van a llevar directos al futuro."
  },
  {
   "id": 32,
@@ -206,6 +206,24 @@
   "id": 33,
   "name": "Javier Jordan",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/033.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 34,
+  "name": "Lourdes Saez de Viteri",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/034.jpg",
+  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+ },
+ {
+  "id": 35,
+  "name": "José Luis Curiel",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/035.jpg",
+  "desc": "¡Los genes de la eterna juventud! La cara de eterno adolescente de José Luis Curiel le convierten en el candidato perfecto para cualquier puesto de becario multipropósito."
+ },
+ {
+  "id": 36,
+  "name": "Zuriñe Andrade",
+  "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/036.jpg",
   "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
  }
 ]
