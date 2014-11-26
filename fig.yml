@@ -4,7 +4,8 @@ web:
    - "80:80"
   volumes:
    - code/static/:/var/www
-   - nginx-conf/:/etc/nginx/sites-enabled
+   - nginx-conf/default:/etc/nginx/sites-enabled/default
+   - nginx-conf/gzip.conf:/etc/nginx/conf.d/gzip.conf
   links:
    - app
 app:
@@ -21,4 +22,4 @@ redis:
   image: redis:2.8.17
   command: redis-server --appendonly yes
   volumes:
-  - /data:/data
+  - /data:/data  
