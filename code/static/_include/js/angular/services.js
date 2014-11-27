@@ -21,3 +21,14 @@ services.factory('ItalyService', ['$resource',
       query: {method:'GET', isArray:true}
     });
 }]);
+
+services.service('VoteService', ['$http', '$q',  function($http, $q) {
+  this.isVoteOpen = function() {
+    
+    var deferred = $q.defer();    
+    $http.get('/vote/status/').success(function(result) {
+      deferred.resolve(result.status == "open");
+    });
+    return deferred.promise;
+  };  
+}]);

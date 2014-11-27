@@ -168,7 +168,7 @@
             <h3 class="profile-name">{{worker.name}}</h3>
             <p class="profile-description">{{worker.desc}}</p>
            
-                
+        <div ng-show="voteOpen">                
           <div class="star-rating" ng-click="voted=true" ng-hide="voted">
               <input type="radio" name="rating-{{worker.id}}" value="1" ng-click="vote(worker.id,1)"><i></i>
               <input type="radio" name="rating-{{worker.id}}" value="2" ng-click="vote(worker.id,2)"><i></i>
@@ -181,8 +181,10 @@
               <input type="radio" name="rating-{{worker.id}}" value="9" ng-click="vote(worker.id,9)"><i></i>
               <input type="radio" name="rating-{{worker.id}}" value="10" ng-click="vote(worker.id,10)"><i></i>
             </div>
-             <strong class="choice" >Valoraci&oacute;n gen&eacute;tica: <span class="result-{{worker.id}}">0</span></strong>
-             
+            <div ng-show="voted">
+             <strong class="choice" >Valoraci&oacute;n gen&eacute;tica: <span class="result-{{worker.id}}">{{ratings[worker.id - 1]}}</span></strong>
+            </div>
+        </div>     
         </div>
         <!-- End Profile -->        
     </div>
