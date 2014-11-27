@@ -19,7 +19,7 @@ def rate(id, rating):
     """
     result = "ok"
     httpResult = 200
-    if (rating > 0 and rating <= 10): 
+    if (voting_status == "open" and (rating > 0 and rating <= 10)): 
         idInRedis = redisId(id)
         if redis.hexists(idInRedis, voting.VOTES):
             redis.hincrby(idInRedis, voting.VOTES, 1)
@@ -28,7 +28,7 @@ def rate(id, rating):
             redis.hmset(idInRedis, {voting.VOTES: 1, voting.SUM: rating})
         updateIdRating(id)        
     else:        
-        result = "invalid rating"
+        result = "Rating %s not accepted" % rating
         httpResult = 404        
     return jsonify({"result": result }), httpResult
 

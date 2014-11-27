@@ -1,11 +1,13 @@
 @media (min-width: 1200px) {
 	.profile {min-height:1400px;}
 	.onlyPic .profile{min-height:0;}
+	.star-rating{margin-bottom: 10px;}
 
 }
 @media (min-width: 979px) and (max-width: 1200px) {
 	.profile {min-height:1250px;}
 	.onlyPic .profile{min-height:0;}
+	.star-rating{margin-bottom: 10px;}
 }
 @media (min-width: 768px) and (max-width: 979px) {
 	#menu {
@@ -23,6 +25,7 @@
 	
 	.profile {min-height:1100px;}
 	.onlyPic .profile{min-height:0;}
+	.star-rating{margin-bottom: 10px;}
 	header .sticky-nav #mobile-nav,
 	header .sticky-nav.stuck #mobile-nav {
 		margin-right: 20px;	
@@ -60,7 +63,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
 
 	#back-to-top {
-		display: none !important;	
+		display: block !important;	
 	}
 	
 	#home-slider {
@@ -220,7 +223,7 @@
 
 @media (max-width: 480px) {
 	#back-to-top {
-		display: none !important;	
+		display: block !important;	
 	}
 	
 	#home-slider {

@@ -92,10 +92,11 @@
         
         <nav id="menu">
         	<ul id="menu-nav">
-            	<li class="current"><a href="index.html#home-slider">Inicio</a></li>
-                <li><a href="index.html#work">Votar</a></li>
+            	<li class="current"><a href="index.html#home-slider">El Experimento</a></li>
+                
                 <li><a href="file_mix.html">Genes Fileteados</a></li>
-                <li><a href="italian_mix.html">Italy connection</a></li>
+                <li><a href="italian_mix.html">Italian connection</a></li>
+                <li ng-hide="voteOpen"><a href="winners.html">Ganadores</a></li>
                 
             </ul>
         </nav>
@@ -103,10 +104,26 @@
     </div>
 </header>
 <!-- End Header -->
-
+<div class="page">
+  <div class="container">
+    <div class="row" ng-hide="voteOpen">
+    <div class="span12">
+              
+                 <div class="info-block">
+                  <div class="info-text">
+                    <h3><span class="color-text">GANADORES</span> Top V24Labs</h3>
+                        <p>&iexcl;&iexcl;Ya tenemos los resultados!!. Tras el recuento de vuestras votaciones, ya podemos presentaros a los ganadores.</p>
+                        <a href="winners.html" class="button">Ver ranking</a> 
+              </div>
+          </div>
+    </div>  
+</div>
+  </div>
+</div>
 <!-- Our Work Section -->
 <div id="intro" class="page">
 	<div class="container">
+    
     	<!-- Title Page -->
         <div class="row">
             <div class="span12">
@@ -139,16 +156,17 @@
 <div id="work" class="page-alternate">
 <div class="container">
     <!-- Title Page -->
-    <div class="row">
+    <div class="row" ng-show="voteOpen">
         <div class="span12">
             <div class="title-page">
                 <h2 class="title">V24labs os necesita</h2>
                  <p class="profile-description">
                    Desgraciadamente s&oacute;lo hay presupuesto para producir a gran escala a uno solo de los sujetos resultantes. As&iacute; que toca elegir a uno.                    
                 </p>
-                <p class="profile-description">
-                   Valora a cada uno de los sujetos usando las estrellitas que hay abajo. Pi&eacute;nsalo bien, ya que el ganador ser&aacute; clonado y repartido en cada uno de los departamentos.            
-                </p>
+                
+                <div class="alert alert-standard fade in">
+                    Ojo, que habr&aacute; premio para el más votado. (Premio para ambos donantes del material gen&eacute;tico) 
+                </div>
 
             </div>
             
@@ -162,11 +180,12 @@
         <!-- Start Profile -->
     	<div class="span6 profile" ng-repeat="worker in workers">
         	<div class="image-wrap">
-               
                 <img ng-src="{{worker.pic}}" ng-alt="Sujeto {{worker.id}}">
             </div>
             <h3 class="profile-name">{{worker.name}}</h3>
+            <blockquote>
             <p class="profile-description">{{worker.desc}}</p>
+          </blockquote>
            
         <div ng-show="voteOpen">                
           <div class="star-rating" ng-click="voted=true" ng-hide="voted">
@@ -181,8 +200,12 @@
               <input type="radio" name="rating-{{worker.id}}" value="9" ng-click="vote(worker.id,9)"><i></i>
               <input type="radio" name="rating-{{worker.id}}" value="10" ng-click="vote(worker.id,10)"><i></i>
             </div>
-            <div ng-show="voted">
-             <strong class="choice" >Valoraci&oacute;n gen&eacute;tica: <span class="result-{{worker.id}}">{{ratings[worker.id - 1]}}</span></strong>
+            <div class="alert alert-success fade in" ng-show="voted">
+                    
+                    <strong>Valoraci&oacute;n gen&eacute;tica:</strong> <span class="result-{{worker.id}}">{{ratings[worker.id - 1]}}</span>
+                </div>
+            <div >
+             
             </div>
           </div>     
         </div>
@@ -194,7 +217,9 @@
 <!-- End About Section -->
 
 
-
+<footer>
+  <p class="credits">&copy;2014 V24Labs. </p>
+</footer>
 <!-- Back To Top -->
 <a id="back-to-top" href="#">
 	<i class="font-icon-arrow-simple-up"></i>

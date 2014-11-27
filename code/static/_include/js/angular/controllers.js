@@ -19,19 +19,26 @@ v24AppControllers.controller('workersCtrl', function ($scope, $http, V24WorkersS
   }
 });
 
-v24AppControllers.controller('file_workersCtrl', function ($scope, $http, FileteService) {
+v24AppControllers.controller('file_workersCtrl', function ($scope, $http, FileteService, VoteService) {
     $scope.workers = FileteService.query();  
+    VoteService.isVoteOpen().then(function(isOpen){
+    $scope.voteOpen = isOpen;
+  });
 });
 
-v24AppControllers.controller('it_workersCtrl', function ($scope, $http, ItalyService) {
+v24AppControllers.controller('it_workersCtrl', function ($scope, $http, ItalyService, VoteService) {
   $scope.workers = ItalyService.query();
+  VoteService.isVoteOpen().then(function(isOpen){
+    $scope.voteOpen = isOpen;
+  });
 });
 
 
 
-v24AppControllers.controller('winnerCtrl', function ($scope, $http) {
-  $http.get('vote/top/2/').success(function(data) {
+v24AppControllers.controller('winnerCtrl', function ($scope, $http, V24WorkersService) {
+  $http.get('vote/top/35/').success(function(data) {
     $scope.winners = data;
+    $scope.workers = V24WorkersService.query();
 
   }).
   error(function(data, status, headers, config) {
