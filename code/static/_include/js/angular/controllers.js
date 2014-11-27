@@ -1,59 +1,35 @@
+'use strict';
 
-var v24App = angular.module('v24App', ['ngAnimate']);
+var v24AppControllers = angular.module('v24Controllers', []);
 
+v24AppControllers.controller('workersCtrl', function ($scope, $http, V24WorkersService, VoteService) {
 
-v24App.controller('workersCtrl', function ($scope, $http) {
-  $http.get('/data/data.json').success(function(data) {
-    $scope.workers = data;
-  }).
-  error(function(data, status, headers, config) {
-    console.log("error loading workers")
+  $scope.workers = V24WorkersService.query();
+  $scope.ratings = new Array($scope.workers.length);
+  VoteService.isVoteOpen().then(function(isOpen){
+    $scope.voteOpen = isOpen;
   });
 
-  $scope.canVote = function() {
-    canVote = false;
-    $http.get('/vote/status/').success(function(data) {
-     canVote = data.status == "open";
-    });
-    return canVote;
-  };
-
-  $scope.getNumber = function(num) {
-	  return new Array(num);   
-  };
-
   $scope.vote = function(id,score) {
+    $scope.ratings[id - 1] = score;
     $http.get('/vote/rate/'+id+'/'+score+'/').
       success(function(data, status, headers, config) {
-        console.log("exito: "+data);
-      }).
-      error(function(data, status, headers, config) {
-        console.log("error: "+data);
-      });
+        
+      })
   }
 });
 
-v24App.controller('file_workersCtrl', function ($scope, $http) {
-  $http.get('/data/filemix_data.json').success(function(data) {
-    $scope.workers = data;
-  }).
-  error(function(data, status, headers, config) {
-    console.log("error loading fileworkers")
-  });
+v24AppControllers.controller('file_workersCtrl', function ($scope, $http, FileteService) {
+    $scope.workers = FileteService.query();  
 });
 
-v24App.controller('it_workersCtrl', function ($scope, $http) {
-  $http.get('/data/italianmix_data.json').success(function(data) {
-    $scope.workers = data;
-  }).
-  error(function(data, status, headers, config) {
-    console.log("error loading fileworkers")
-  });
+v24AppControllers.controller('it_workersCtrl', function ($scope, $http, ItalyService) {
+  $scope.workers = ItalyService.query();
 });
 
 
 
-v24App.controller('winnerCtrl', function ($scope, $http) {
+v24AppControllers.controller('winnerCtrl', function ($scope, $http) {
   $http.get('vote/top/2/').success(function(data) {
     $scope.winners = data;
 
