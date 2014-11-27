@@ -32,7 +32,7 @@
 .button:hover,
 .button:active,
 .button:focus {
-	background-color: #DE5E60;
+	background-color: $color_elemnts;
 	color:#FFFFFF;
 }
 
@@ -106,12 +106,12 @@
 
 .accordion-heading:hover .accordion-toggle,
 .accordion-heading:hover .accordion-toggle.inactive {
-	background:#DE5E60;
+	background:$color_elemnts;
 	color:#FFFFFF;
 }
 
 .accordion-heading .accordion-toggle.active {
-	background:#DE5E60;
+	background:$color_elemnts;
 	color:#FFFFFF;
 }
 
@@ -222,7 +222,7 @@
 }
 
 .alert-success {
-  	background-color: #1F7F5C;
+  	background-color: $color_elemnts;
 }
 
 .alert-danger,
@@ -273,7 +273,7 @@
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  	background-color: #DE5E60;
+  	background-color: $color_elemnts;
 	color: #FFFFFF;
   	text-decoration: none;
   	display: block;
@@ -321,7 +321,7 @@
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
 	border: none;
-  	background-color: #DE5E60;
+  	background-color: $color_elemnts;
 	color: #FFFFFF;
   	cursor: default;
 }
@@ -362,7 +362,7 @@
 
 blockquote {
   	padding: 15px 20px;
-  	border-left: 2px solid #DE5E60;
+  	border-left: 2px solid $color_elemnts;
 }
 
 blockquote p {
@@ -478,7 +478,7 @@ blockquote small:before {
 ================================================== */
 
 .info-block {
-    border-left: 2px solid #DE5E60;
+    border-left: 2px solid $color_elemnts;
     overflow: hidden;
     padding: 20px;
     position: relative;
@@ -490,7 +490,8 @@ blockquote small:before {
 }
 
 .info-block h3 {
-    font-size: 24px;
+  .color-text{font-size: 22px; display: block;margin-top: 5px;}
+    font-size: 18px;
 	line-height: 1em;
 	text-transform: uppercase;
 }
@@ -590,7 +591,7 @@ blockquote small:before {
 
 .icons-example ul li:hover a,
 .icons-example ul li.active a {
-	background-color: #DE5E60;	
+	background-color: $color_elemnts;	
 	
 	-webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
