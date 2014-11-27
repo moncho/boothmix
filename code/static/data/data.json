@@ -82,7 +82,7 @@
   "id": 13,
   "name": "Maria Martinez",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/013.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina."
+  "desc": ""
  }
  ,
   {
@@ -110,7 +110,7 @@
   "id": 17,
   "name": "Jose San Camarasa",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/017.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": ""
  },
  {
   "id": 18,
@@ -134,13 +134,13 @@
   "id": 21,
   "name": "Frannie Sánchez Navarro",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/021.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "Como dice la Verbena de La Paloma (con voz de chotis) 'Una morena y una rubia, hijas del pueblo de Madrid, interrumpiendo lotería, a la oficina has de venir.' "
  },
  {
   "id": 22,
   "name": "Karla hungria",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/022.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": ""
  },
  {
   "id": 23,
@@ -188,7 +188,7 @@
   "id": 30,
   "name": "Tamara Pérez",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/030.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "Ya que ahora hay que preguntarles todo a nuestros clientes, que mejor persona para hacerlo que Tamara Pérez. Todo ha de ser validado por nuestros clientes, ¿tostada de pan de molde o barrita con tomate? lo que diga el cliente, ¿La camiseta de M.A. la de Superman o la de Green Lantern? espera que llamo a un cliente y le pregunto. No sabemos donde vamos a comer hoy, no hay problema nuestros clientes nos lo van a decir. De hecho, el postre de esta cena lo va a elegir el cliente."
  },
  {
   "id": 31,
@@ -200,19 +200,19 @@
   "id": 32,
   "name": "Frannie Pelufo",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/032.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": ""
  },
  {
   "id": 33,
   "name": "Javier Jordan",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/033.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "'¡Necesitamos al mejor ingeniero de QA!, tiene que ser el mejor en su trabajo, y que juegue al baloncesto de puta madre, ¡y que sea negro!....ya se con quien vamos a mezclar a Javier del Valle, ponedme con Chicago.' Este fue el momento de revelación del genético jefe de V24labs antes de que alguien la pifiara con la toma de muestras."
  },
  {
   "id": 34,
   "name": "Lourdes Saez de Viteri",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/034.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": ""
  },
  {
   "id": 35,
@@ -224,6 +224,6 @@
   "id": 36,
   "name": "Zuriñe Andrade",
   "pic": "https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/036.jpg",
-  "desc": "Nuestros científicos querían la mejor vista y el oido más agudo. El resultado ha sido Pepe Antolín todo una máquina"
+  "desc": "Zuriñe Andrade, directora general y actriz. Le encanta utilizar citas de cine en los negocios de la empresa, las más famosas: 'Siempre nos quedará la administración de París', 'Le haré una oferta que no podrá rechazar, un 2x1 en PrimiAbono', '¿Abogaaado?, ¿Estás ahí abogadooooo?...es que tengo una carta de la dirección general de la ordenación del juego'"
  }
 ]
