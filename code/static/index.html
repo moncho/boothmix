@@ -94,7 +94,7 @@
             	<li class="current"><a href="index.html#home-slider">El Experimento</a></li>
                 
                 <li><a href="file_mix.html">Genes Fileteados</a></li>
-                <li><a href="italian_mix.html">Italian connection</a></li>
+                <li><a href="italian_mix.html">Italian Gene Pool</a></li>
               
                 
             </ul>
@@ -177,7 +177,7 @@
     <div class="row workers" ng-cloak>  
     	
         <!-- Start Profile -->
-    	<div class="span6 profile" ng-repeat="worker in workers">
+    	<div class="span6 profile" ng-repeat="worker in workers" ng-hide=“workers.$resolved”>
         	<div class="image-wrap">
                 <img ng-src="{{worker.pic}}" ng-alt="Sujeto {{worker.id}}">
             </div>
