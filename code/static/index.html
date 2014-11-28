@@ -93,8 +93,8 @@
         	<ul id="menu-nav">
             	<li class="current"><a href="index.html#home-slider">El Experimento</a></li>
                 
-                <li><a href="file_mix.html">Genes Fileteados</a></li>
-                <li><a href="italian_mix.html">Italian connection</a></li>
+                <li><a href="file_mix.html">Expediente Filete</a></li>
+                <li><a href="italian_mix.html">Italian Gene Pool</a></li>
               
                 
             </ul>
@@ -137,7 +137,7 @@
                    En una primera fase se ha procedido a combinar aleatoriamente material gen&eacute;tico de los empleados de Ventura24 para obtener el SuperTrabajador perfecto. Se muestran a continuaci&oacute;n los resultados mas prometedores.
                 </p>
                 <p class="profile-description">
-                   Disclaimer: Los sujetos mostrados no existen fuera de nuestros laboratorios. Cualquier parecido con la realidad es mera coincidencia.                    
+                   Disclaimer: Los sujetos mostrados no existen fuera de nuestros laboratorios. Cualquier parecido con la realidad es una desgraciada coincidencia.                    
                 </p>
                 <p class="profile-description">
                    Otro Disclaimer: Ning&uacute;n empleado de Ventura24 ha resultado dañado. De momento.
@@ -160,7 +160,7 @@
             <div class="title-page">
                 <h2 class="title">V24labs os necesita</h2>
                  <p class="profile-description">
-                   Desgraciadamente s&oacute;lo hay presupuesto para producir a gran escala a uno solo de los sujetos resultantes. As&iacute; que toca elegir a uno.                    
+                   Desgraciadamente s&oacute;lo hay presupuesto para producir a gran escala uno solo de los sujetos resultantes. As&iacute; que hay que elegir a uno.                    
                 </p>
                 
                 <div class="alert alert-standard fade in">
@@ -177,7 +177,7 @@
     <div class="row workers" ng-cloak>  
     	
         <!-- Start Profile -->
-    	<div class="span6 profile" ng-repeat="worker in workers">
+    	<div class="span6 profile" ng-repeat="worker in workers" ng-hide=“workers.$resolved”>
         	<div class="image-wrap">
                 <img ng-src="{{worker.pic}}" ng-alt="Sujeto {{worker.id}}">
             </div>

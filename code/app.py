@@ -71,6 +71,11 @@ def close():
     voting_status = 'close'
     return votingStatusJSON()
 
+@app.route('/vote/4/8/15/16/23/42/')
+def flush():
+    redis.flushdb()
+    return jsonify({"jacob": "black smoke" }), 200    
+
 @app.route('/vote/api/')
 def describe_api():
     #return app.send_static_file('api.html')
