@@ -92,10 +92,10 @@
         
         <nav id="menu">
         	<ul id="menu-nav">
-               <li class="current"><a href="index.html#home-slider">Inicio</a></li>
-                <li><a href="index.html#work">Votar</a></li>
+               <li ><a href="index.html#home-slider">El Experimento</a></li>                
                 <li><a href="file_mix.html">Genes Fileteados</a></li>
-                <li><a href="italian_mix.html">Italy connection</a></li>
+                <li><a href="italian_mix.html">Italian connection</a></li>
+                
             </ul>
         </nav>
         
@@ -113,7 +113,27 @@
         <div class="span12">
             <div class="title-page">
                 <h2 class="title">Los ganadores</h2>
+                
             </div>
+            <p class="profile-description">
+                  &iexcl;Aqu&iacute; est&aacute;! El primer ranking gen&eacute;tico de Ventura24, el primero del grupo Zeal...digo ZEAL. 
+                </p>
+                <p class="profile-description">
+                  La pareja que ha engendrado al número 1 de esta lista recibirá el premio en la oficina justo después del desayuno. Eso si, a cambio de una muestra de sangre para poder empezar con la clonación cuanto antes.
+                </p>
+                <p class="profile-description">
+                  En caso de empate técnico en la primera posición hay dos opciones</p>
+                  <ul>
+                  <li> Duelo a muerte para desempatar</li>
+                  <li>Duelo de bailes entre las dos parejas. El duelo será esta misma noche y los jueces serán todos los demás.</li>
+              </ul>
+
+                </p>
+                 <div class="title-page">
+                <h2 class="title">Ranking</h2>
+                
+            </div>
+
         </div>
     </div>
     <!-- End Title Page -->
@@ -122,12 +142,18 @@
     <div class="row workers onlyPic" >  
     	
         <!-- Start Profile -->
-    	<div class="span12 profile" ng-repeat="winner in winners.top">
-            <div class="medal"><img ng-src="_include/img/top{{$index+1}}.png" alt=""></div>
-            <h2 class="top{{$index+1}}">Top {{$index+1}}</h2>
-            <h3>Valoraci&oacute;n gen&eacute;tica: {{winner.rating}}</h3>
+    	<div class="span4 profile" ng-repeat="winner in winners.top">
+            <div class="info-block winner-profile pos-{{$index+1}}">
+                <div class="medal" ng-if="($index+1)<=3"><img ng-src="_include/img/top{{$index+1}}.png" alt=""></div>
+                  <div class="info-text">
+                    <h3><span class="color-text">Top {{$index+1}}</span><br/> {{workers[winner.id-1].name}}</h3>
+                        
+                         <h4>Valoraci&oacute;n gen&eacute;tica: {{winner.rating}}</h4>
+              </div>
+            
+            </div>
         	<div class="image-wrap">
-                <img ng-src="https://dl.dropboxusercontent.com/u/59867952/v24labs-prod/0{{winner.id}}.jpg">
+                <img ng-src="{{workers[winner.id-1].pic}}">
             </div>
             
            
@@ -140,7 +166,9 @@
 </div>
 <!-- End About Section -->
 
-
+<footer>
+  <p class="credits">&copy;2014 V24Labs. </p>
+</footer>
 
 <!-- Back To Top -->
 <a id="back-to-top" href="#">
